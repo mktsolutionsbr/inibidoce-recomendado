@@ -1,1 +1,366 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c1{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c0{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c3{background-color:#ffffff;max-width:451.4pt;padding:72pt 72pt 72pt 72pt}.c2{height:11pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}</style></head><body class="c3 doc-content"><p class="c0"><span class="c1">&lt;!DOCTYPE html&gt;</span></p><p class="c0"><span class="c1">&lt;html lang=&quot;pt-BR&quot;&gt;</span></p><p class="c0"><span class="c1">&lt;head&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;meta charset=&quot;UTF-8&quot; /&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;title&gt;Inibidoce - Controle sua vontade de doces&lt;/title&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;style&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; * {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-sizing: border-box;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-family: &#39;Arial&#39;, sans-serif;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; body {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #f8f9fa;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #333;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; line-height: 1.6;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .alert-top {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #d9534f;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-weight: bold;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 16px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .container {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; max-width: 1000px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .hero {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 40px 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background: linear-gradient(to right, #28a745, #218838);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 30px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .hero h1 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 2.5em;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .hero p {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.4em;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .btn {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: inline-block;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #ffc107;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #000;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 15px 30px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-weight: bold;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 50px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.2em;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-shadow: 0 4px 10px rgba(0,0,0,0.2);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; transition: 0.3s;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .btn:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; transform: scale(1.05);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #e0a800;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .section {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 50px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .benefits, .benefits2 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; flex-wrap: wrap;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; justify-content: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; gap: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 30px auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .benefit {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; width: 220px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-shadow: 0 2px 10px rgba(0,0,0,0.1);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .testimony {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #e9f7ef;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 30px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; max-width: 800px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 20px auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #444;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: left;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.1em;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; line-height: 1.8;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .ingredients {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: grid;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; gap: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-top: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .ingredient {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-shadow: 0 2px 10px rgba(0,0,0,0.1);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .guarantee {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #f0f8ff;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 30px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border: 2px solid #007bff;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .guarantee h3 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #007bff;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .offer {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #fff3cd;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 30px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-weight: bold;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.3em;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #856404;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .faq {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #f8f9fa;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: left;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; max-width: 800px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 20px auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Esconde WhatsApp e rodap&eacute; */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .whatsapp-section, footer, .contact-info {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; display: none !important;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; /* Estilo do formul&aacute;rio */</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .form-container {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; max-width: 600px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 30px auto;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 20px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background: #fff;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; box-shadow: 0 2px 10px rgba(0,0,0,0.1);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .form-container h3 {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-bottom: 15px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: #28a745;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .form-container input {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 12px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin: 10px 0;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border: 1px solid #ddd;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 5px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1em;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .form-container button {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #28a745;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; padding: 12px 25px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border: none;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; border-radius: 50px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; font-size: 1.1em;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; cursor: pointer;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; margin-top: 10px;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; .form-container button:hover {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; background-color: #218838;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &lt;/style&gt;</span></p><p class="c0"><span class="c1">&lt;/head&gt;</span></p><p class="c0"><span class="c1">&lt;body&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Alerta superior --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;div class=&quot;alert-top&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &#9888;&#65039; Se voc&ecirc; sair dessa p&aacute;gina, perder&aacute; a nova promo&ccedil;&atilde;o exclusiva!</span></p><p class="c0"><span class="c1">&nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;div class=&quot;container&quot;&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Cabe&ccedil;alho principal --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;hero&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h1&gt;CONTROLE SUA VONTADE DE DOCES&lt;br&gt;E CUIDE DA SUA SA&Uacute;DE COM INIBIDOCE&lt;/h1&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;EXPERIMENTE OS BENEF&Iacute;CIOS DE UMA VIDA MAIS EQUILIBRADA&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot; class=&quot;btn open-form&quot;&gt;COMPRAR AGORA &rarr;&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot; class=&quot;btn open-form&quot;&gt;CLIQUE AQUI &rarr;&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Benef&iacute;cios principais --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;POR QUE ESCOLHER INIBIDOCE?&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefits&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Previne as dores causadas pelo sobrepeso&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Melhora a sa&uacute;de cardiovascular&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Regula os n&iacute;veis de a&ccedil;&uacute;car no sangue&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Ajuda a manter o peso saud&aacute;vel&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Mais vantagens --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;MAIS VANTAGENS DE USAR INIBIDOCE&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;Nos compreendemos o tamanho do seu problema, &eacute; por isso que o INIBIDOCE foi desenvolvido pensando na sua situa&ccedil;&atilde;o&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;O INIBIDOCE &Eacute; A SUA SOLU&Ccedil;&Atilde;O COMPLETA PARA O BEM-ESTAR&lt;/strong&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefits2&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Melhora a qualidade do sono&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Suporta a sa&uacute;de cardiovascular&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Aumenta a sensa&ccedil;&atilde;o de saciedade&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Rico em antioxidantes&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Melhora a digest&atilde;o&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;benefit&quot;&gt;Contribui para a sa&uacute;de mental&lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Depoimento da Dra. Mariana Alvez --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;CONFIRA A OPINI&Atilde;O DA Dra. MARIANA ALVEZ:&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;testimony&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&quot;Inibidoce &eacute; uma excelente adi&ccedil;&atilde;o para quem busca controlar a vontade de doces e manter uma dieta equilibrada. Seus ingredientes, como Vitamina C, &Aacute;cido F&oacute;lico, Vitamina B12, Cromo, Triptofano e Cacau, s&atilde;o comprovadamente eficazes no suporte ao controle de diabetes e na promo&ccedil;&atilde;o do bem-estar geral. A f&oacute;rmula foi cuidadosamente desenvolvida para oferecer benef&iacute;cios significativos sem comprometer a sa&uacute;de.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;No meu consult&oacute;rio, tenho recomendado Inibidoce para pacientes que enfrentam dificuldades em controlar a ingest&atilde;o de a&ccedil;&uacute;car. Muitos deles relatam uma redu&ccedil;&atilde;o not&aacute;vel na compuls&atilde;o por doces e uma melhora nos n&iacute;veis de energia e disposi&ccedil;&atilde;o. A facilidade de uso &ndash; apenas 15 gotas uma vez ao dia &ndash; torna o produto conveniente e adapt&aacute;vel a qualquer rotina di&aacute;ria.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Al&eacute;m disso, a aprova&ccedil;&atilde;o pela ANVISA garante que Inibidoce segue rigorosos padr&otilde;es de seguran&ccedil;a e qualidade. Essa certifica&ccedil;&atilde;o &eacute; essencial para assegurar aos meus pacientes que eles est&atilde;o consumindo um suplemento confi&aacute;vel e ben&eacute;fico. Confio em Inibidoce como uma ferramenta valiosa no aux&iacute;lio &agrave; sa&uacute;de metab&oacute;lica e no suporte &agrave; manuten&ccedil;&atilde;o de um estilo de vida saud&aacute;vel.&quot;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- F&oacute;rmula exclusiva --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;CONHE&Ccedil;A A F&Oacute;RMULA EXCLUSIVA DO INIBIDOCE&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;ingredients&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;ingredient&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;VITAMINA C&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;A Vitamina C &eacute; um antioxidante poderoso que ajuda a proteger as c&eacute;lulas do corpo contra danos. Al&eacute;m disso, contribui para a sa&uacute;de da pele e auxilia na absor&ccedil;&atilde;o de ferro dos alimentos.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;ingredient&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;VITAMINA B12&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;A Vitamina B12 &eacute; vital para a produ&ccedil;&atilde;o de energia no corpo e para a sa&uacute;de do sistema nervoso. Tamb&eacute;m ajuda na forma&ccedil;&atilde;o de gl&oacute;bulos vermelhos e na s&iacute;ntese de DNA.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;ingredient&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;CACAU&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;O Cacau cont&eacute;m flavonoides que t&ecirc;m propriedades antioxidantes, ajudando a reduzir a inflama&ccedil;&atilde;o e melhorar a sa&uacute;de do cora&ccedil;&atilde;o. Tamb&eacute;m pode melhorar o fluxo sangu&iacute;neo e baixar a press&atilde;o arterial.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;ingredient&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;TRIPTOFANO&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;O Triptofano &eacute; um amino&aacute;cido essencial que o corpo usa para produzir serotonina, um neurotransmissor que regula o humor e o sono. Pode ajudar a reduzir a ansiedade e melhorar a qualidade do sono.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;ingredient&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;&Aacute;CIDO F&Oacute;LICO&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;O &Aacute;cido F&oacute;lico &eacute; essencial para a forma&ccedil;&atilde;o de novas c&eacute;lulas, especialmente c&eacute;lulas sangu&iacute;neas. &Eacute; crucial durante per&iacute;odos de r&aacute;pido crescimento, como gravidez e inf&acirc;ncia.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;ingredient&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;CROMO&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;O Cromo melhora a a&ccedil;&atilde;o da insulina e ajuda a manter n&iacute;veis saud&aacute;veis de glicose no sangue, sendo especialmente ben&eacute;fico para pessoas com diabetes tipo 2 ou resist&ecirc;ncia &agrave; insulina.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Seguran&ccedil;a e ANVISA --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;100% SEGURO - APROVADO PELA ANVISA&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;A Donna bem estar se orgulha de oferecer um produto que n&atilde;o s&oacute; &eacute; eficaz, mas tamb&eacute;m seguro para o consumo. Nossa f&oacute;rmula foi rigorosamente testada e aprovada pela ANVISA, garantindo que voc&ecirc; receba um suplemento de alta qualidade e confiabilidade.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;Com a certifica&ccedil;&atilde;o da ANVISA, nossos clientes t&ecirc;m a tranquilidade de saber que est&atilde;o consumindo um produto que segue os mais altos padr&otilde;es de seguran&ccedil;a e efic&aacute;cia. Isso reflete nosso compromisso com a sa&uacute;de e bem-estar dos nossos consumidores.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;Escolher o Inibidoce &eacute; optar por um produto que passou por uma an&aacute;lise criteriosa e atende a todas as normas estabelecidas pelas autoridades de sa&uacute;de.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;Confie em nossa experi&ecirc;ncia e inicie sua jornada para uma vida mais saud&aacute;vel com a certeza de estar em boas m&atilde;os.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Garantia --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;guarantee&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;90 Dias DE GARANTIA! | SELO PROCON de Garantia 100%&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;N&atilde;o acredita em n&oacute;s? N&oacute;s colocamos nossa confian&ccedil;a em nossa f&oacute;rmula a ponto de oferecer uma garantia de satisfa&ccedil;&atilde;o de 90 dias.&lt;/strong&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Isso significa que se voc&ecirc; n&atilde;o estiver completamente satisfeito com os resultados do tratamento, &lt;strong&gt;reembolsaremos 100% do seu dinheiro na hora.&lt;/strong&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Tudo isso com uma garantia fornecida e aprovada pelo &lt;strong&gt;PROCON&lt;/strong&gt;, voc&ecirc; tem &lt;strong&gt;RISCO ZERO&lt;/strong&gt; na sua compra.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Oferta --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;offer&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &#128293; &Uacute;LTIMOS __57 FRASCOS__ COM 70% DE DESCONTO</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot; class=&quot;btn open-form&quot;&gt;QUERO GARANTIR MEU DESCONTO &rarr;&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot; class=&quot;btn open-form&quot;&gt;SIM, EU QUERO! &rarr;&lt;/a&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Perguntas frequentes --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;h2&gt;Confira as perguntas mais frequentes&lt;/h2&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;faq&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Meu site &eacute; seguro?&lt;/strong&gt;&lt;br&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Sim, o site &eacute; seguro. Implementamos medidas de seguran&ccedil;a robustas para proteger suas informa&ccedil;&otilde;es pessoais e garantir uma experi&ecirc;ncia segura durante sua visita. Utilizamos tecnologias avan&ccedil;adas, como criptografia SSL, para proteger seus dados e transa&ccedil;&otilde;es online.&lt;/p&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Como devo tomar o Inibidoce?&lt;/strong&gt;&lt;br&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Recomenda-se a ingest&atilde;o de 15 gotas de Inibidoce uma vez ao dia, de prefer&ecirc;ncia pela manh&atilde;.&lt;/p&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Quando verei os resultados?&lt;/strong&gt;&lt;br&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Os resultados podem variar de pessoa para pessoa, mas muitos usu&aacute;rios relatam sentir os benef&iacute;cios nas primeiras semanas de uso.&lt;/p&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;O Inibidoce ajuda na diabetes?&lt;/strong&gt;&lt;br&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Sim, Inibidoce foi formulado para auxiliar no controle da diabetes. No entanto, &eacute; importante seguir as orienta&ccedil;&otilde;es m&eacute;dicas e continuar com o tratamento prescrito.&lt;/p&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Inibidoce tem gl&uacute;ten?&lt;/strong&gt;&lt;br&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; N&atilde;o, Inibidoce n&atilde;o cont&eacute;m gl&uacute;ten.&lt;/p&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Onde posso comprar?&lt;/strong&gt;&lt;br&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Inibidoce est&aacute; dispon&iacute;vel para compra em nosso site oficial.&lt;/p&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;&Eacute; aprovado pela ANVISA?&lt;/strong&gt;&lt;br&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Sim, Inibidoce &eacute; aprovado pela ANVISA, garantindo sua seguran&ccedil;a e efic&aacute;cia.&lt;/p&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Possui contraindica&ccedil;&otilde;es?&lt;/strong&gt;&lt;br&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Em geral, sim. No entanto, &eacute; sempre melhor consultar um profissional de sa&uacute;de antes de combinar suplementos.&lt;/p&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Pode causar efeitos colaterais?&lt;/strong&gt;&lt;br&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Inibidoce &eacute; formulado com ingredientes naturais e &eacute; bem tolerado pela maioria das pessoas. Se voc&ecirc; experimentar qualquer rea&ccedil;&atilde;o adversa, interrompa o uso e consulte um m&eacute;dico.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;!-- Aviso legal --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;section class=&quot;section&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Satisfa&ccedil;&atilde;o Garantida ou seu Dinheiro de Volta!&lt;/strong&gt;&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p&gt;A venda do &lt;strong&gt;INIBIDOCE&lt;/strong&gt; atrav&eacute;s de qualquer outro site est&aacute; &lt;strong&gt;PROIBIDA&lt;/strong&gt; e pode colocar a sua &lt;strong&gt;SA&Uacute;DE EM RISCO.&lt;/strong&gt; N&atilde;o compre falsifica&ccedil;&otilde;es e garanta um produto de qualidade comprando &lt;strong&gt;APENAS&lt;/strong&gt; atrav&eacute;s deste site oficial.&lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;p style=&quot;margin-top:10px; font-size:0.9em; color:#666;&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; Certificado e autorizado para comercializa&ccedil;&atilde;o em todo territ&oacute;rio Nacional atrav&eacute;s do anexo 1 da RDC 27/2010 em conformidade com a RDC 23/2000 da ANVISA.</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;/p&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Formul&aacute;rio de coleta de e-mail --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;div class=&quot;form-container&quot; id=&quot;emailForm&quot; style=&quot;display: none;&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;h3&gt;Quase l&aacute;! Deixe seu e-mail para garantir o desconto:&lt;/h3&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;form action=&quot;https://docs.google.com/forms/d/e/1FAIpQLSd1cNwyyWfI9ijuDKJUxMOo0JjL1sD0sHNzOlyHzzO9TUM/formResponse&quot; target=&quot;hidden_iframe&quot; onsubmit=&quot;redirecionarComprador()&quot;&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;input type=&quot;email&quot; name=&quot;emailAddress&quot; placeholder=&quot;Seu melhor e-mail&quot; required&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &lt;button type=&quot;submit&quot;&gt;CONTINUAR PARA O SITE OFICIAL &rarr;&lt;/button&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &lt;/form&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;/div&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Iframe oculto --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;iframe name=&quot;hidden_iframe&quot; width=&quot;0&quot; height=&quot;0&quot; style=&quot;display:none;&quot;&gt;&lt;/iframe&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Script para abrir o formul&aacute;rio e redirecionar --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;script&gt;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; const botaoForm = document.querySelectorAll(&#39;.open-form&#39;);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; const form = document.getElementById(&#39;emailForm&#39;);</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; botaoForm.forEach(btn =&gt; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; btn.addEventListener(&#39;click&#39;, (e) =&gt; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; e.preventDefault();</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; window.scrollTo(0, 0);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; form.style.display = &#39;block&#39;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; });</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; });</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &nbsp; function redirecionarComprador() {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; setTimeout(() =&gt; {</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; &nbsp; window.location.href = &quot;https://inibidoce.com/pv/?ref=afime83emp&quot;;</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; &nbsp; }, 2000);</span></p><p class="c0"><span class="c1">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c1">&nbsp; &lt;/script&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&nbsp; &lt;!-- Rodap&eacute; e WhatsApp removidos --&gt;</span></p><p class="c0"><span class="c1">&nbsp; &lt;footer style=&quot;display:none;&quot;&gt;Contato | Certificados de seguran&ccedil;a&lt;/footer&gt;</span></p><p class="c0 c2"><span class="c1"></span></p><p class="c0"><span class="c1">&lt;/body&gt;</span></p><p class="c0"><span class="c1">&lt;/html&gt;</span></p><p class="c0 c2"><span class="c1"></span></p></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inibidoce - Controle sua vontade de doces</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    .alert-top {
+      background-color: #d9534f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #28a745, #218838);
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.4em;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #ffc107;
+      color: #000;
+      padding: 15px 30px;
+      margin: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2em;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background-color: #e0a800;
+    }
+    .section {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .benefits, .benefits2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px auto;
+    }
+    .benefit {
+      background: white;
+      padding: 20px;
+      width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .testimony {
+      background-color: #e9f7ef;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 20px auto;
+      color: #444;
+      text-align: left;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+    .ingredients {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .ingredient {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .guarantee {
+      background-color: #f0f8ff;
+      padding: 30px;
+      border-radius: 10px;
+      border: 2px solid #007bff;
+      text-align: center;
+    }
+    .guarantee h3 {
+      color: #007bff;
+    }
+    .offer {
+      text-align: center;
+      background-color: #fff3cd;
+      padding: 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.3em;
+      color: #856404;
+    }
+    .faq {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    /* Esconde WhatsApp e rodapé */
+    .whatsapp-section, footer, .contact-info {
+      display: none !important;
+    }
+    /* Estilo do formulário */
+    .form-container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .form-container h3 {
+      margin-bottom: 15px;
+      color: #28a745;
+    }
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .form-container button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .form-container button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Alerta superior -->
+  <div class="alert-top">
+    ⚠️ Se você sair dessa página, perderá a nova promoção exclusiva!
+  </div>
+
+  <div class="container">
+
+    <!-- Cabeçalho principal -->
+    <section class="hero">
+      <h1>CONTROLE SUA VONTADE DE DOCES<br>E CUIDE DA SUA SAÚDE COM INIBIDOCE</h1>
+      <p>EXPERIMENTE OS BENEFÍCIOS DE UMA VIDA MAIS EQUILIBRADA</p>
+      <a href="#" class="btn open-form">COMPRAR AGORA →</a>
+      <a href="#" class="btn open-form">CLIQUE AQUI →</a>
+    </section>
+
+    <!-- Benefícios principais -->
+    <section class="section">
+      <h2>POR QUE ESCOLHER INIBIDOCE?</h2>
+      <div class="benefits">
+        <div class="benefit">Previne as dores causadas pelo sobrepeso</div>
+        <div class="benefit">Melhora a saúde cardiovascular</div>
+        <div class="benefit">Regula os níveis de açúcar no sangue</div>
+        <div class="benefit">Ajuda a manter o peso saudável</div>
+      </div>
+    </section>
+
+    <!-- Mais vantagens -->
+    <section class="section">
+      <h2>MAIS VANTAGENS DE USAR INIBIDOCE</h2>
+      <p>Nos compreendemos o tamanho do seu problema, é por isso que o INIBIDOCE foi desenvolvido pensando na sua situação</p>
+      <p><strong>O INIBIDOCE É A SUA SOLUÇÃO COMPLETA PARA O BEM-ESTAR</strong></p>
+      <div class="benefits2">
+        <div class="benefit">Melhora a qualidade do sono</div>
+        <div class="benefit">Suporta a saúde cardiovascular</div>
+        <div class="benefit">Aumenta a sensação de saciedade</div>
+        <div class="benefit">Rico em antioxidantes</div>
+        <div class="benefit">Melhora a digestão</div>
+        <div class="benefit">Contribui para a saúde mental</div>
+      </div>
+    </section>
+
+    <!-- Depoimento da Dra. Mariana Alvez -->
+    <section class="section">
+      <h2>CONFIRA A OPINIÃO DA Dra. MARIANA ALVEZ:</h2>
+      <div class="testimony">
+        <p>"Inibidoce é uma excelente adição para quem busca controlar a vontade de doces e manter uma dieta equilibrada. Seus ingredientes, como Vitamina C, Ácido Fólico, Vitamina B12, Cromo, Triptofano e Cacau, são comprovadamente eficazes no suporte ao controle de diabetes e na promoção do bem-estar geral. A fórmula foi cuidadosamente desenvolvida para oferecer benefícios significativos sem comprometer a saúde.</p>
+        <p>No meu consultório, tenho recomendado Inibidoce para pacientes que enfrentam dificuldades em controlar a ingestão de açúcar. Muitos deles relatam uma redução notável na compulsão por doces e uma melhora nos níveis de energia e disposição. A facilidade de uso – apenas 15 gotas uma vez ao dia – torna o produto conveniente e adaptável a qualquer rotina diária.</p>
+        <p>Além disso, a aprovação pela ANVISA garante que Inibidoce segue rigorosos padrões de segurança e qualidade. Essa certificação é essencial para assegurar aos meus pacientes que eles estão consumindo um suplemento confiável e benéfico. Confio em Inibidoce como uma ferramenta valiosa no auxílio à saúde metabólica e no suporte à manutenção de um estilo de vida saudável."</p>
+      </div>
+    </section>
+
+    <!-- Fórmula exclusiva -->
+    <section class="section">
+      <h2>CONHEÇA A FÓRMULA EXCLUSIVA DO INIBIDOCE</h2>
+      <div class="ingredients">
+        <div class="ingredient">
+          <h3>VITAMINA C</h3>
+          <p>A Vitamina C é um antioxidante poderoso que ajuda a proteger as células do corpo contra danos. Além disso, contribui para a saúde da pele e auxilia na absorção de ferro dos alimentos.</p>
+        </div>
+        <div class="ingredient">
+          <h3>VITAMINA B12</h3>
+          <p>A Vitamina B12 é vital para a produção de energia no corpo e para a saúde do sistema nervoso. Também ajuda na formação de glóbulos vermelhos e na síntese de DNA.</p>
+        </div>
+        <div class="ingredient">
+          <h3>CACAU</h3>
+          <p>O Cacau contém flavonoides que têm propriedades antioxidantes, ajudando a reduzir a inflamação e melhorar a saúde do coração. Também pode melhorar o fluxo sanguíneo e baixar a pressão arterial.</p>
+        </div>
+        <div class="ingredient">
+          <h3>TRIPTOFANO</h3>
+          <p>O Triptofano é um aminoácido essencial que o corpo usa para produzir serotonina, um neurotransmissor que regula o humor e o sono. Pode ajudar a reduzir a ansiedade e melhorar a qualidade do sono.</p>
+        </div>
+        <div class="ingredient">
+          <h3>ÁCIDO FÓLICO</h3>
+          <p>O Ácido Fólico é essencial para a formação de novas células, especialmente células sanguíneas. É crucial durante períodos de rápido crescimento, como gravidez e infância.</p>
+        </div>
+        <div class="ingredient">
+          <h3>CROMO</h3>
+          <p>O Cromo melhora a ação da insulina e ajuda a manter níveis saudáveis de glicose no sangue, sendo especialmente benéfico para pessoas com diabetes tipo 2 ou resistência à insulina.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segurança e ANVISA -->
+    <section class="section">
+      <h2>100% SEGURO - APROVADO PELA ANVISA</h2>
+      <p>A Donna bem estar se orgulha de oferecer um produto que não só é eficaz, mas também seguro para o consumo. Nossa fórmula foi rigorosamente testada e aprovada pela ANVISA, garantindo que você receba um suplemento de alta qualidade e confiabilidade.</p>
+      <p>Com a certificação da ANVISA, nossos clientes têm a tranquilidade de saber que estão consumindo um produto que segue os mais altos padrões de segurança e eficácia. Isso reflete nosso compromisso com a saúde e bem-estar dos nossos consumidores.</p>
+      <p>Escolher o Inibidoce é optar por um produto que passou por uma análise criteriosa e atende a todas as normas estabelecidas pelas autoridades de saúde.</p>
+      <p>Confie em nossa experiência e inicie sua jornada para uma vida mais saudável com a certeza de estar em boas mãos.</p>
+    </section>
+
+    <!-- Garantia -->
+    <section class="section">
+      <div class="guarantee">
+        <h3>90 Dias DE GARANTIA! | SELO PROCON de Garantia 100%</h3>
+        <p><strong>Não acredita em nós? Nós colocamos nossa confiança em nossa fórmula a ponto de oferecer uma garantia de satisfação de 90 dias.</strong></p>
+        <p>Isso significa que se você não estiver completamente satisfeito com os resultados do tratamento, <strong>reembolsaremos 100% do seu dinheiro na hora.</strong></p>
+        <p>Tudo isso com uma garantia fornecida e aprovada pelo <strong>PROCON</strong>, você tem <strong>RISCO ZERO</strong> na sua compra.</p>
+      </div>
+    </section>
+
+    <!-- Oferta -->
+    <section class="section">
+      <div class="offer">
+        🔥 ÚLTIMOS __57 FRASCOS__ COM 70% DE DESCONTO
+      </div>
+      <a href="#" class="btn open-form">QUERO GARANTIR MEU DESCONTO →</a>
+      <a href="#" class="btn open-form">SIM, EU QUERO! →</a>
+    </section>
+
+    <!-- Perguntas frequentes -->
+    <section class="section">
+      <h2>Confira as perguntas mais frequentes</h2>
+      <div class="faq">
+        <p><strong>Meu site é seguro?</strong><br>
+        Sim, o site é seguro. Implementamos medidas de segurança robustas para proteger suas informações pessoais e garantir uma experiência segura durante sua visita. Utilizamos tecnologias avançadas, como criptografia SSL, para proteger seus dados e transações online.</p>
+
+        <p><strong>Como devo tomar o Inibidoce?</strong><br>
+        Recomenda-se a ingestão de 15 gotas de Inibidoce uma vez ao dia, de preferência pela manhã.</p>
+
+        <p><strong>Quando verei os resultados?</strong><br>
+        Os resultados podem variar de pessoa para pessoa, mas muitos usuários relatam sentir os benefícios nas primeiras semanas de uso.</p>
+
+        <p><strong>O Inibidoce ajuda na diabetes?</strong><br>
+        Sim, Inibidoce foi formulado para auxiliar no controle da diabetes. No entanto, é importante seguir as orientações médicas e continuar com o tratamento prescrito.</p>
+
+        <p><strong>Inibidoce tem glúten?</strong><br>
+        Não, Inibidoce não contém glúten.</p>
+
+        <p><strong>Onde posso comprar?</strong><br>
+        Inibidoce está disponível para compra em nosso site oficial.</p>
+
+        <p><strong>É aprovado pela ANVISA?</strong><br>
+        Sim, Inibidoce é aprovado pela ANVISA, garantindo sua segurança e eficácia.</p>
+
+        <p><strong>Possui contraindicações?</strong><br>
+        Em geral, sim. No entanto, é sempre melhor consultar um profissional de saúde antes de combinar suplementos.</p>
+
+        <p><strong>Pode causar efeitos colaterais?</strong><br>
+        Inibidoce é formulado com ingredientes naturais e é bem tolerado pela maioria das pessoas. Se você experimentar qualquer reação adversa, interrompa o uso e consulte um médico.</p>
+      </div>
+    </section>
+
+    <!-- Aviso legal -->
+    <section class="section">
+      <p><strong>Satisfação Garantida ou seu Dinheiro de Volta!</strong></p>
+      <p>A venda do <strong>INIBIDOCE</strong> através de qualquer outro site está <strong>PROIBIDA</strong> e pode colocar a sua <strong>SAÚDE EM RISCO.</strong> Não compre falsificações e garanta um produto de qualidade comprando <strong>APENAS</strong> através deste site oficial.</p>
+      <p style="margin-top:10px; font-size:0.9em; color:#666;">
+        Certificado e autorizado para comercialização em todo território Nacional através do anexo 1 da RDC 27/2010 em conformidade com a RDC 23/2000 da ANVISA.
+      </p>
+    </section>
+
+  </div>
+
+  <!-- Formulário de coleta de e-mail -->
+  <div class="form-container" id="emailForm" style="display: none;">
+    <h3>Quase lá! Deixe seu e-mail para garantir o desconto:</h3>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSd1cNwyyWfI9ijuDKJUxMOo0JjL1sD0sHNzOlyHzzO9TUM/formResponse" target="hidden_iframe" onsubmit="redirecionarComprador()">
+      <input type="email" name="emailAddress" placeholder="Seu melhor e-mail" required>
+      <button type="submit">CONTINUAR PARA O SITE OFICIAL →</button>
+    </form>
+  </div>
+
+  <!-- Iframe oculto -->
+  <iframe name="hidden_iframe" width="0" height="0" style="display:none;"></iframe>
+
+  <!-- Script para abrir o formulário e redirecionar -->
+  <script>
+    const botaoForm = document.querySelectorAll('.open-form');
+    const form = document.getElementById('emailForm');
+
+    botaoForm.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo(0, 0);
+        form.style.display = 'block';
+      });
+    });
+
+    function redirecionarComprador() {
+      setTimeout(() => {
+        window.location.href = "https://inibidoce.com/pv/?ref=afime83emp";
+      }, 2000);
+    }
+  </script>
+
+  <!-- Rodapé e WhatsApp removidos -->
+  <footer style="display:none;">Contato | Certificados de segurança</footer>
+
+</body>
+</html>
